@@ -1,0 +1,1038 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+  --warna: pink;
+  --hitam: #222;
+  --putih: #fff;
+  --krem: #f3d7ca;
+  --kremMud: #f5eee6;
+  --putihdikit: #fff8e3;
+  --light-black: #777;
+  --light-white: #fff9;
+  --dark-bg: rgba(0, 0, 0, 0.7);
+  --light-bg: #eee;
+  --border: 0.1rem solid var(--hitam);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--putih);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--warna);
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+.heading {
+  background-size: cover !important;
+  background-position: center !important;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading h1 {
+  font-size: 5rem;
+  color: var(--putih);
+  text-transform: uppercase;
+  text-shadow: var(--text-shadow);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--hitam);
+  margin-top: 1rem;
+  color: var(--putih);
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--warna);
+}
+
+.heading-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--hitam);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--putih);
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  color: var(--hitam);
+}
+
+.header .navbar a {
+  font-size: 1.3rem;
+  margin-left: 1.3rem;
+  color: var(--hitam);
+}
+
+.header .navbar a:hover {
+  color: var(--warna);
+}
+
+.header .user a {
+  font-size: 1.3rem;
+  margin-left: 1.3rem;
+  color: var(--hitam);
+  padding: 1rem;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.header .user a:hover {
+  background: var(--warna);
+  border-radius: 5px;
+}
+
+#menu-btn {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--hitam);
+  display: none;
+}
+
+.home {
+  padding: 0;
+}
+
+.home .slide {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 30rem;
+}
+
+.home .slide .content {
+  width: 50rem;
+  display: none;
+}
+
+.home .swiper-slide-active .content {
+  display: inline-block;
+}
+
+.home .slide .content span {
+  display: block;
+  font-size: 2rem;
+  color: var(--light-white);
+  padding-bottom: 1rem;
+  animation: fadeIn 0.3s linear backwards 0.2s;
+}
+
+.home .slide .content h3 {
+  font-size: 4vw;
+  color: var(--putih);
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: var(--text-shadow);
+  padding: 1rem 0;
+  animation: fadeIn 0.3s linear backwards 0.4s;
+}
+
+.home .slide .content .btn {
+  animation: fadeIn 0.3s linear backwards 0.6s;
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev {
+  bottom: 0;
+  right: 2;
+  height: 4rem;
+  width: 4rem;
+  background: var(--putih);
+  color: var(--hitam);
+  border-radius: 10px;
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover {
+  background: var(--warna);
+  color: var(--putih);
+}
+
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after {
+  font-size: 2rem;
+}
+
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+.services .box-container .box {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--warna);
+  cursor: pointer;
+  border-radius: 1rem;
+  user-select: none;
+}
+
+.services .box-container .box:hover {
+  background: var(--krem);
+}
+
+.services .box-container .box img {
+  border-radius: 1rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.services .box-container .box h3 {
+  color: var(--putih);
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.home-about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-about .image {
+  flex: 1 1 35rem;
+}
+
+.home-about .image img {
+  width: 100%;
+}
+
+.home-about .content {
+  flex: 1 1 35rem;
+  padding: 2rem;
+  background: var(--light-bg);
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.home-about .content h3 {
+  font-size: 2rem;
+  color: var(--hitam);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-about .content p {
+  font-size: 1rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: var(--hitam);
+  text-align: justify;
+  text-transform: none;
+}
+
+.home-packages {
+  background-color: var(--light-bg);
+}
+
+.home-packages .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 2rem;
+}
+
+.home-packages .box-container .box {
+  box-shadow: var(--box-shadow);
+  background: var(--putih);
+  border-radius: 10px;
+}
+
+.home-packages .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.home-packages .box-container .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.home-packages .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-packages .box-container .box .content h3 {
+  font-size: 2rem;
+}
+
+.home-packages .box-container .box .content p {
+  font-size: 1rem;
+  color: var(--hitam);
+  line-height: 2;
+  padding: 1rem 0;
+  text-transform: none;
+}
+
+.home-packages .load-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home-offer {
+  text-align: center;
+}
+
+.home-offer .content {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.home-offer .content h3 {
+  font-size: 3rem;
+  color: var(--hitam);
+  text-transform: uppercase;
+}
+
+.home-offer .content span {
+  text-transform: uppercase;
+  color: red;
+}
+
+.home-offer .content h2 {
+  text-transform: none;
+}
+
+.home-offer .content p {
+  font-size: 1.2rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.about .image {
+  flex: 1 1 30rem;
+}
+
+.about .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about .content {
+  flex: 1 1 30rem;
+  text-align: center;
+}
+
+.about .content h3 {
+  font-size: 2rem;
+  color: var(--hitam);
+}
+
+.about .content p {
+  font-size: 1rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+  text-align: justify;
+  text-transform: none;
+}
+
+.about .content .icons-container {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.about .content .icons-container .icons {
+  background: var(--light-bg);
+  padding: 0.8rem;
+  flex: 1 1 10rem;
+}
+
+.about .content .icons-container .icons i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--warna);
+}
+
+.about .content .icons-container .icons span {
+  font-size: 1rem;
+  color: var(--light-black);
+  display: block;
+}
+
+.reviews {
+  background: var(--light-bg);
+}
+
+.reviews .slide {
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--putih);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.reviews .slide .stars {
+  padding-bottom: 1rem;
+}
+
+.reviews .slide .stars i {
+  font-size: 1rem;
+  color: var(--warna);
+}
+
+.reviews .slide p {
+  font-size: 1rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.reviews .slide h3 {
+  font-size: 1.2rem;
+  color: var(--hitam);
+}
+
+.reviews .slide span {
+  font-size: 0.9rem;
+  color: var(--warna);
+  display: block;
+}
+
+.reviews .slide img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.packages .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 10rem;
+}
+
+.packages .box-container .box {
+  box-shadow: var(--box-shadow);
+  background: var(--putih);
+  border-radius: 10px;
+  display: none;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2) {
+  display: inline-block;
+}
+
+.packages .box-container .box .image {
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.packages .box-container .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.packages .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.packages .box-container .box .content h3 {
+  font-size: 1.5rem;
+}
+
+.packages .box-container .box .content p {
+  font-size: 1rem;
+  color: var(--hitam);
+  line-height: 2;
+  padding: 1rem 0;
+  text-transform: none;
+}
+
+.packages .load-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.booking .book-form {
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 10px;
+}
+
+.booking .book-form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.booking .book-form .flex .inputbox {
+  flex: 1 1 30rem;
+}
+
+.booking .book-form .flex .inputbox input,
+select {
+  width: 100%;
+  padding: 1.2rem 1.2rem;
+  font-size: 1rem;
+  color: var(--hitam);
+  text-transform: none;
+  margin-top: 1rem;
+  outline: none;
+}
+
+.booking .book-form .flex .inputbox input:focus,
+select:focus {
+  background: var(--putih);
+  color: var(--hitam);
+  outline: none;
+}
+
+.booking .book-form .flex .inputbox input::placeholder {
+  text-transform: capitalize;
+}
+
+.booking .book-form .flex .inputbox input:focus::placeholder {
+  color: var(--light-black);
+}
+
+.booking .book-form .flex .inputbox span {
+  font-size: 1rem;
+  color: var(--hitam);
+}
+
+.booking .book-form label {
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-transform: none;
+}
+
+.booking .book-form label input {
+  accent-color: var(--putih);
+  margin-right: 0.5rem;
+}
+
+.booking .book-form .tombol {
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.booking .book-form .tombol #back:hover {
+  background: red;
+}
+
+.riwayat .container {
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 1rem;
+}
+
+.riwayat .container .table {
+  margin: 20px;
+}
+
+.riwayat .container .table .status #pending {
+  background: #f29339;
+  margin-top: 0.5rem;
+  color: var(--hitam);
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.riwayat .container .table .status #reject {
+  background: red;
+  margin-top: 0.5rem;
+  color: var(--hitam);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.riwayat .container .table .status #app {
+  background: var(--warna);
+  margin-top: 0.5rem;
+  color: var(--hitam);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.riwayat .container .keterangan {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--light-black);
+}
+
+.riwayat .container .keterangan #pending {
+  color: var(--hitam);
+  background: #f29339;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.riwayat .container .keterangan #reject {
+  color: var(--hitam);
+  background: red;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.riwayat .container .keterangan i {
+  margin: 0.5rem;
+}
+
+.riwayat .container .keterangan #app {
+  color: var(--hitam);
+  background: var(--warna);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.pasien .container {
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 1rem;
+}
+
+.pasien .container .table {
+  margin: 20px;
+}
+
+.pasien .container .table .status #pending {
+  background: #f29339;
+  margin-top: 0.5rem;
+  color: var(--hitam);
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.pasien .container .table .status #reject {
+  background: red;
+  margin-top: 0.5rem;
+  color: var(--hitam);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.pasien .container .table .status #app {
+  background: var(--warna);
+  margin-top: 0.5rem;
+  color: var(--hitam);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.pasien .container .table .tombol {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.pasien .container .table .tombol #acc {
+  margin-bottom: 0.5rem;
+}
+
+.pasien .container .table .tombol #xxx:hover {
+  background: red;
+}
+
+.pasien .container .table textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
+  line-height: 1;
+  border: var(--border);
+  resize: none;
+  text-transform: none;
+}
+
+.pengguna .container {
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 1rem;
+}
+
+.pengguna .container .table {
+  margin: 20px;
+}
+
+.pengguna .container .table .tombol #hapus {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--krem);
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.pengguna .container .table .tombol #hapus:hover {
+  background: red;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px auto;
+  user-select: none;
+}
+
+th,
+td {
+  border: var(--border);
+  padding: 0.2rem;
+  text-align: center;
+  text-transform: none;
+}
+
+td {
+  background: var(--kremMud);
+  color: var(--hitam);
+}
+
+th {
+  background: var(--krem);
+  color: var(--hitam);
+}
+
+.footer {
+  background-color: var(--warna);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+  color: var(--putih);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.footer .box-container .box a {
+  color: var(--light-white);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+.footer .box-container .box a i {
+  color: var(--krem);
+  padding-right: 0.5rem;
+  transition: 0.2s linear;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 1rem;
+}
+
+.footer .credit {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 0.1rem solid var(--light-white);
+  font-size: 1rem;
+  color: var(--putih);
+}
+
+.footer .credit span {
+  color: var(--hitam);
+}
+
+.priv {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.priv .content {
+  flex: 1 1 30rem;
+  text-align: center;
+}
+
+.priv .content h1 {
+  font-size: 2.5rem;
+  color: var(--hitam);
+  text-transform: uppercase;
+}
+
+.priv .content h2 {
+  font-size: 1rem;
+  color: var(--hitam);
+  text-align: justify;
+}
+
+.priv .content p {
+  font-size: 1rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+  text-align: justify;
+  text-transform: none;
+}
+
+.priv .content ul {
+  font-size: 1rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+  text-align: justify;
+  text-transform: none;
+}
+
+.tou {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.tou .content {
+  flex: 1 1 30rem;
+  text-align: center;
+}
+
+.tou .content h1 {
+  font-size: 2.5rem;
+  color: var(--hitam);
+  text-transform: uppercase;
+}
+
+.tou .content h2 {
+  font-size: 1rem;
+  color: var(--hitam);
+  text-align: justify;
+}
+
+.tou .content p {
+  font-size: 1rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+  text-align: justify;
+  text-transform: none;
+}
+
+.pasien .container {
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pasien .container .table {
+  margin: 20px;
+}
+
+.pasien .container .table .status #pending {
+  background: #f29339;
+  margin-top: 1rem;
+  color: var(--hitam);
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.pasien .container .table .status #reject {
+  background: red;
+  margin-top: 1rem;
+  color: var(--hitam);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.pasien .container .table .status #app {
+  background: var(--warna);
+  margin-top: 1rem;
+  color: var(--hitam);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.pasien .container .table .tombol {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.pasien .container .table .tombol #acc {
+  margin-bottom: 0.5rem;
+}
+
+.pasien .container .table #xxx:hover {
+  background: red;
+}
+
+.admin {
+  background: var(--krem);
+}
+
+.admin .content {
+  background: var(--kremMud);
+  border-radius: 10px;
+}
+
+.admin .content span {
+  text-transform: uppercase;
+  color: red;
+}
+
+.admin .content p {
+  display: block;
+  font-size: 1rem;
+  color: var(--hitam);
+  padding: 1rem;
+  margin: 1rem;
+  text-transform: none;
+}
+
+.admin .content .page:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  .home .slide .content h3 {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    transition: 0.2s linear;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    right: 0;
+    left: 0;
+    background-color: var(--putih);
+    border-top: var(--border);
+    transition: 0.2s linear;
+    padding: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-title {
+    font-size: 2rem;
+  }
+}

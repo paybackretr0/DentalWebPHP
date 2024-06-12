@@ -22,7 +22,7 @@
     ?>
     <!-- Akhir Header -->
 
-    <div class="heading" style="background: url(../PROJECTAKHIR/assets/pict/tou.jpg) no-repeat;">
+    <div class="heading" style="background: url(../DentalWebPHP/assets/pict/tou.jpg) no-repeat;">
         <h1>terms of use</h1>
     </div>
 

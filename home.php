@@ -31,7 +31,7 @@
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide"
-                    style="background: url(../PROJECTAKHIR/assets/pict/gambar6.jpg) no-repeat; ">
+                    style="background: url(../DentalWebPHP/assets/pict/gambar6.jpg) no-repeat; ">
                     <div class="content">
                         <span>professional dentists</span>
                         <h3>Ditangani oleh Dokter Gigi Terbaik</h3>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide slide"
-                    style="background: url(../PROJECTAKHIR/assets/pict/gambar4.jpg) no-repeat; ">
+                    style="background: url(../DentalWebPHP/assets/pict/gambar4.jpg) no-repeat; ">
                     <div class="content">
                         <span>modern dental tools</span>
                         <h3>Fasilitas Modern dan Higienis</h3>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide slide"
-                    style="background: url(../PROJECTAKHIR/assets/pict/gambar5.jpg) no-repeat; ">
+                    style="background: url(../DentalWebPHP/assets/pict/gambar5.jpg) no-repeat; ">
                     <div class="content">
                         <span>comprehensive dental services</span>
                         <h3>layanan kesehatan gigi lengkap</h3>

@@ -21,7 +21,7 @@
     ?>
     <!-- Akhir Header -->
 
-    <div class="heading" style="background: url(../PROJECTAKHIR/assets/pict/priv.jpg) no-repeat;">
+    <div class="heading" style="background: url(../DentalWebPHP/assets/pict/priv.jpg) no-repeat;">
         <h1>privacy policy</h1>
     </div>
 

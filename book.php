@@ -54,7 +54,7 @@
     </section>
     <!-- Akhir Header -->
 
-    <div class="heading" style="background: url(../PROJECTAKHIR/assets/pict/fasilitas6.jpg) no-repeat;">
+    <div class="heading" style="background: url(../DentalWebPHP/assets/pict/fasilitas6.jpg) no-repeat;">
         <h1>Booking</h1>
     </div>
 

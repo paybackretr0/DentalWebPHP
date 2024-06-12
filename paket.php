@@ -24,7 +24,7 @@
     ?>
     <!-- Akhir Header -->
 
-    <div class="heading" style="background: url(../PROJECTAKHIR/assets/pict/fasilitas5.jpg) no-repeat;">
+    <div class="heading" style="background: url(../DentalWebPHP/assets/pict/fasilitas5.jpg) no-repeat;">
         <h1>Paket</h1>
     </div>
 

@@ -18,7 +18,7 @@
     ?>
     <!-- Akhir Header -->
 
-    <div class="heading" style="background: url(../PROJECTAKHIR/assets/pict/fasilitas3.jpg) no-repeat;">
+    <div class="heading" style="background: url(../DentalWebPHP/assets/pict/fasilitas3.jpg) no-repeat;">
         <h1>about us</h1>
     </div>
 
